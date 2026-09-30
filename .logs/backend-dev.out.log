@@ -1,0 +1,733 @@
+
+> backend@1.0.0 dev
+> nodemon src/server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:05:03] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:05:03] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:05:03] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:05:03] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 10:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:30:27] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:30:27] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:30:28] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:30:28] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:30:55] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:30:55] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:30:55] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:30:55] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 10:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:51:06] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:51:06] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:51:06] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:51:06] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:54:27] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:54:27] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:54:27] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:54:27] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 10:55:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:55:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:55:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 10:57:05] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 10:57:05] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 10:57:05] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 10:57:05] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:00:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:00:00] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:00:00] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:01:03] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:01:03] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:01:03] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:01:03] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:05:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:05:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:05:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:05:31] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:05:31] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:05:32] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:05:32] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:06:06] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:06:06] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:06:07] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:06:07] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:09:39] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:09:39] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:09:40] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:09:40] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:09:56] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:09:56] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:09:56] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:09:56] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:09:56] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:09:57] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:09:57] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:09:57] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:09:57] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:09:57] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:09:57] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:11:56] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:11:56] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:11:57] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:11:57] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:14:05] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:14:05] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:14:05] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:14:05] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:15:00] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:15:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:15:01] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:15:01] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:17:23] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:17:23] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:17:23] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:17:23] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:17:41] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:17:41] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:17:41] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:17:41] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:20:27] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:20:27] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:20:27] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:20:27] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:35:06] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:35:06] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:35:06] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:35:06] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 11:37:37] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:37:37] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:37:37] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 11:37:37] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 11:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 11:55:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 11:55:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 11:55:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 12:00:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 12:00:00] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 12:00:00] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 12:05:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:05:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:05:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 12:05:25] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 12:05:25] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 12:05:25] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 12:05:25] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 12:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:55:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:55:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:55:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 12:57:33] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 12:57:33] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 12:57:34] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 12:57:34] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 12:57:40] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 12:57:40] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 12:57:40] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 12:57:40] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:00:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:00:00] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 13:00:00] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 13:05:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:05:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:05:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 13:55:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 13:55:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 13:55:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 14:00:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 14:00:00] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 14:00:00] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 14:05:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:05:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:05:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 14:55:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 14:55:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 14:55:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 15:00:00] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 15:00:01] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 15:00:01] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[2026-06-24 15:05:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:05:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:05:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:10:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:10:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:10:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:15:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:15:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:15:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:20:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:20:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:20:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:25:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:25:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:25:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:30:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:30:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:30:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:35:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:35:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:35:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:40:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:40:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:40:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:45:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:45:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:45:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:50:00] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:50:00] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:50:00] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 15:51:13] [31mERROR[39m: [36mUncaught exception[39m
+    error: {
+      "code": "EADDRINUSE",
+      "errno": -4091,
+      "syscall": "listen",
+      "address": "0.0.0.0",
+      "port": 8907
+    }
+[2026-06-24 15:51:13] [32mINFO[39m: [36mShutting down server...[39m
+[2026-06-24 15:51:13] [31mERROR[39m: [36mFailed to close server cleanly[39m
+    error: {
+      "code": "ERR_SERVER_NOT_RUNNING"
+    }
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 15:56:41] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 15:56:41] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 15:56:42] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 15:56:42] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 15:58:00] [31mERROR[39m: [36mUncaught exception[39m
+    error: {
+      "code": "EADDRINUSE",
+      "errno": -4091,
+      "syscall": "listen",
+      "address": "0.0.0.0",
+      "port": 8907
+    }
+[2026-06-24 15:58:00] [32mINFO[39m: [36mShutting down server...[39m
+[2026-06-24 15:58:00] [31mERROR[39m: [36mFailed to close server cleanly[39m
+    error: {
+      "code": "ERR_SERVER_NOT_RUNNING"
+    }
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 17:54:03] [32mINFO[39m: [36mBackend running[39m
+    [35mhost[39m: "0.0.0.0"
+    [35mport[39m: 8907
+[2026-06-24 17:54:04] [32mINFO[39m: [36mShopify cron initialized. Running initial sync...[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mStarting scheduled Shopify abandoned cart sync...[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mRecordings auto-converter cron initialized. Running initial scan...[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mStarting scheduled AMR/disguised recordings auto-conversion...[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mFound 1 companies with Shopify integration.[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mSyncing Shopify checkouts for company: Bhagvat Prasadam (d86905c8-656a-4a4a-a616-258923019be0)[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mFound 14 potential recordings to inspect.[39m
+[2026-06-24 17:54:04] [32mINFO[39m: [36mAuto-conversion cycle completed. Converted 0 files.[39m
+[2026-06-24 17:54:05] [31mERROR[39m: [36mFailed to sync Shopify for company Bhagvat Prasadam[39m
+    [35mcompanyId[39m: "d86905c8-656a-4a4a-a616-258923019be0"
+    error: "fetch failed"
+[2026-06-24 17:54:05] [32mINFO[39m: [36mScheduled Shopify sync completed.[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 17:54:18] [31mERROR[39m: [36mUncaught exception[39m
+    error: {
+      "code": "EADDRINUSE",
+      "errno": -4091,
+      "syscall": "listen",
+      "address": "0.0.0.0",
+      "port": 8907
+    }
+[2026-06-24 17:54:18] [32mINFO[39m: [36mShutting down server...[39m
+[2026-06-24 17:54:18] [31mERROR[39m: [36mFailed to close server cleanly[39m
+    error: {
+      "code": "ERR_SERVER_NOT_RUNNING"
+    }
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[2026-06-24 17:54:54] [31mERROR[39m: [36mUncaught exception[39m
+    error: {
+      "code": "EADDRINUSE",
+      "errno": -4091,
+      "syscall": "listen",
+      "address": "0.0.0.0",
+      "port": 8907
+    }
+[2026-06-24 17:54:54] [32mINFO[39m: [36mShutting down server...[39m
+[2026-06-24 17:54:54] [31mERROR[39m: [36mFailed to close server cleanly[39m
+    error: {
+      "code": "ERR_SERVER_NOT_RUNNING"
+    }
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

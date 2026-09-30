@@ -1,0 +1,1 @@
+import{i as e}from"./client-DL2YvArQ.js";var t={list:async({page:t=1,limit:n=20,roleCode:r,isActive:i}={})=>e.get(`/api/users`,{query:{page:t,limit:n,roleCode:r||void 0,isActive:typeof i==`boolean`?i:void 0}}),getById:async t=>e.get(`/api/users/${t}`),create:async t=>e.post(`/api/users`,t),update:async(t,n)=>e.put(`/api/users/${t}`,n)};export{t};

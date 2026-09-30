@@ -1,0 +1,132 @@
+openapi: 3.0.0
+info:
+  title: Tele CRM API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health check
+  /api/auth/login:
+    post:
+      summary: Login
+  /api/auth/me:
+    get:
+      summary: Current user profile
+  /api/users:
+    get:
+      summary: List users
+    post:
+      summary: Create user
+  /api/users/{id}:
+    get:
+      summary: Get user by id
+    put:
+      summary: Update user
+  /api/phone-devices:
+    get:
+      summary: List phone devices
+    post:
+      summary: Create phone device
+  /api/phone-devices/{id}:
+    get:
+      summary: Get phone device by id
+    put:
+      summary: Update phone device
+  /api/leads:
+    get:
+      summary: List leads
+    post:
+      summary: Create lead
+  /api/leads/{id}:
+    get:
+      summary: Get lead by id
+    put:
+      summary: Update lead
+  /api/leads/{id}/recordings:
+    get:
+      summary: List recordings for a lead
+  /api/leads/search-by-phone:
+    get:
+      summary: Search lead by phone
+  /api/leads/import-excel:
+    post:
+      summary: Import leads from spreadsheet
+  /api/leads/assign-imported:
+    post:
+      summary: Assign imported leads
+  /api/calls:
+    get:
+      summary: List calls
+  /api/calls/summary:
+    get:
+      summary: Calls summary
+  /api/calls/start:
+    post:
+      summary: Start call
+  /api/calls/{id}/disposition:
+    post:
+      summary: Apply call disposition
+  /api/recordings:
+    get:
+      summary: Company recordings for management roles
+  /api/calls/{id}/recording-upload:
+    post:
+      summary: Upload call recording
+  /api/calls/{id}/recording:
+    get:
+      summary: Get call recording metadata
+  /api/calls/{id}/recording-file:
+    get:
+      summary: Stream call recording
+  /api/agents/{id}/recordings:
+    get:
+      summary: List recordings for an agent
+  /api/follow-ups/my:
+    get:
+      summary: Current user's follow-ups
+  /api/follow-ups:
+    get:
+      summary: Company follow-ups for management roles
+    post:
+      summary: Create follow-up
+  /api/follow-ups/{id}:
+    put:
+      summary: Update follow-up
+  /api/reports/agent-performance:
+    get:
+      summary: Agent performance report
+  /api/reports/conversion-funnel:
+    get:
+      summary: Conversion funnel report
+  /api/reports/filter-options:
+    get:
+      summary: Report filter options
+  /api/reports/calendar:
+    get:
+      summary: Report calendar data
+  /api/reports/dashboard-summary:
+    get:
+      summary: Dashboard summary
+  /api/super/companies:
+    get:
+      summary: List companies
+    post:
+      summary: Create company
+  /api/super/companies/{id}:
+    get:
+      summary: Get company by id
+    put:
+      summary: Update company
+  /api/super/rbac/roles:
+    get:
+      summary: List roles
+    post:
+      summary: Create role
+  /api/super/rbac/permissions:
+    get:
+      summary: List permissions
+    post:
+      summary: Create permission
+  /api/super/rbac/role-permissions:
+    post:
+      summary: Assign permissions to a role

@@ -1,0 +1,34 @@
+C:\Users\User\Downloads\telecrm\backend\src\modules\leads\leads.controller.js:68
+const deleteLead = async (req, res, next) => {
+      ^
+
+SyntaxError: Identifier 'deleteLead' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1763:18)
+    at Module._compile (node:internal/modules/cjs/loader:1804:20)
+    at Object..js (node:internal/modules/cjs/loader:1961:10)
+    at Module.load (node:internal/modules/cjs/loader:1553:32)
+    at Module._load (node:internal/modules/cjs/loader:1355:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1576:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (C:\Users\User\Downloads\telecrm\backend\src\modules\leads\leads.routes.js:6:25)
+    at Module._compile (node:internal/modules/cjs/loader:1830:14)
+
+Node.js v24.15.0
+C:\Users\User\Downloads\telecrm\backend\src\modules\leads\leads.controller.js:94
+  deleteLead,
+  ^
+
+ReferenceError: deleteLead is not defined
+    at Object.<anonymous> (C:\Users\User\Downloads\telecrm\backend\src\modules\leads\leads.controller.js:94:3)
+    at Module._compile (node:internal/modules/cjs/loader:1830:14)
+    at Object..js (node:internal/modules/cjs/loader:1961:10)
+    at Module.load (node:internal/modules/cjs/loader:1553:32)
+    at Module._load (node:internal/modules/cjs/loader:1355:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1576:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (C:\Users\User\Downloads\telecrm\backend\src\modules\leads\leads.routes.js:6:25)
+    at Module._compile (node:internal/modules/cjs/loader:1830:14)
+
+Node.js v24.15.0

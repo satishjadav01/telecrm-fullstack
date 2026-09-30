@@ -1,0 +1,155 @@
+// // import {
+// //   BarChart3,
+// //   Building2,
+// //   CalendarClock,
+// //   ClipboardList,
+// //   HelpCircle,
+// //   LayoutDashboard,
+// //   PhoneCall,
+// //   ShieldCheck,
+// //   Settings2,
+// //   ShoppingCart,
+// //   UsersRound,
+// // } from 'lucide-react'
+
+// // export const navItems = [
+// //   { to: '/', label: 'Dashboard', icon: LayoutDashboard, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+// //   { to: '/admin-setup', label: 'Admin Setup', icon: Settings2, roles: ['admin', 'manager'] },
+// //   { to: '/super/companies', label: 'Companies', icon: Building2, roles: ['super_admin'] },
+// //   { to: '/super/rbac', label: 'Roles & Perms', icon: ShieldCheck, roles: ['super_admin'] },
+// //   { to: '/leads', label: 'Leads', icon: UsersRound, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+
+// //   { to: '/calls', label: 'Calls', icon: PhoneCall, roles: ['admin', 'manager', 'team_lead'] },
+// //   { to: '/agent/calls', label: 'My Calls', icon: PhoneCall, roles: ['agent'] },
+// //   { to: '/followups', label: 'Follow-ups', icon: CalendarClock, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+// //   { to: '/reports', label: 'Reports', icon: BarChart3, roles: ['admin', 'manager', 'team_lead'] },
+// //   { to: '/shopify-abandoned', label: 'Shopify Carts', icon: ShoppingCart, roles: ['admin', 'manager'] },
+// //   { to: '/help', label: 'Help', icon: HelpCircle, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+// // ]
+
+// import {
+//   BarChart3,
+//   Building2,
+//   CalendarClock,
+//   ClipboardList,
+//   HelpCircle,
+//   LayoutDashboard,
+//   PhoneCall,
+//   ShieldCheck,
+//   Settings2,
+//   ShoppingCart,
+//   UsersRound,
+// } from 'lucide-react'
+
+// export const navItems = [
+//   { to: '/', label: 'Dashboard', icon: LayoutDashboard, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+//   { to: '/admin-setup', label: 'Admin Setup', icon: Settings2, roles: ['admin', 'manager'] },
+//   { to: '/super/companies', label: 'Companies', icon: Building2, roles: ['super_admin'] },
+//   { to: '/super/rbac', label: 'Roles & Perms', icon: ShieldCheck, roles: ['super_admin'] },
+//   { to: '/leads', label: 'Leads', icon: UsersRound, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+
+//   { to: '/calls', label: 'Calls', icon: PhoneCall, roles: ['admin', 'manager', 'team_lead'] },
+//   { to: '/agent/calls', label: 'My Calls', icon: PhoneCall, roles: ['agent'] },
+//   { to: '/followups', label: 'Follow-ups', icon: CalendarClock, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+//   { to: '/reports', label: 'Reports', icon: BarChart3, roles: ['admin', 'manager', 'team_lead'] },
+//   { to: '/shopify-abandoned', label: 'Shopify Carts', icon: ShoppingCart, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+//   { to: '/help', label: 'Help', icon: HelpCircle, roles: ['admin', 'manager', 'team_lead', 'agent'] },
+// ]
+
+import {
+  LayoutGrid,
+  UsersRound,
+  Phone,
+  CalendarCheck,
+  ShoppingCart,
+  Mic,
+  HelpCircle,
+  Building2,
+  ShieldCheck,
+  Settings2,
+} from "lucide-react";
+
+export const navItems = [
+  {
+    to: "/",
+    label: "Overview",
+    icon: LayoutGrid,
+    roles: ["admin", "manager", "team_lead", "agent"],
+    group: "Home",
+  },
+  {
+    to: "/admin-setup",
+    label: "Admin Setup",
+    icon: Settings2,
+    roles: ["admin"],
+    group: "Admin",
+  },
+  {
+    to: "/leads",
+    label: "Leads",
+    icon: UsersRound,
+    roles: ["admin", "manager", "team_lead", "agent"],
+    group: "Work",
+    hasFilter: true,
+  },
+  {
+    to: "/calls",
+    label: "Calls",
+    icon: Phone,
+    roles: ["admin", "manager", "team_lead"],
+    group: "Work",
+    hasFilter: true,
+  },
+  {
+    to: "/agent/calls",
+    label: "Calls",
+    icon: Phone,
+    roles: ["agent"],
+    group: "Work",
+    hasFilter: true,
+  },
+  {
+    to: "/followups",
+    label: "Follow-ups",
+    icon: CalendarCheck,
+    roles: ["admin", "manager", "team_lead", "agent"],
+    group: "Work",
+    hasFilter: true,
+  },
+  {
+    to: "/shopify-abandoned",
+    label: "Abandoned Carts",
+    icon: ShoppingCart,
+    roles: ["admin"],
+    group: "Work",
+  },
+  {
+    to: "/recordings",
+    label: "Recordings",
+    icon: Mic,
+    roles: ["admin", "manager", "team_lead"],
+    group: "Work",
+    hasFilter: true,
+  },
+  {
+    to: "/super/companies",
+    label: "Companies",
+    icon: Building2,
+    roles: ["super_admin"],
+    group: "Admin",
+  },
+  {
+    to: "/super/rbac",
+    label: "Access",
+    icon: ShieldCheck,
+    roles: ["super_admin"],
+    group: "Admin",
+  },
+  {
+    to: "/help",
+    label: "Help",
+    icon: HelpCircle,
+    roles: ["admin", "manager", "team_lead", "agent"],
+    group: "Help",
+  },
+];

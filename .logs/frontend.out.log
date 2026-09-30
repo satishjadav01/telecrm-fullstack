@@ -1,0 +1,151 @@
+
+> frontend@0.0.0 dev
+> vite
+
+Port 8870 is in use, trying another one...
+[2m10:05:17 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+
+  [32m[1mVITE[22m v8.0.8[39m  [2mready in [0m[1m710[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m8871[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.27.1.100:[1m8871[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.5.1:[1m8871[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.30.192.1:[1m8871[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.21.192.1:[1m8871[22m/[39m
+[2m10:23:32 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m10:23:32 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m10:23:32 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m10:23:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[2m10:54:29 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m10:55:04 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/layouts/MainLayout.jsx[22m
+[2m10:55:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m10:56:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/layouts/MainLayout.jsx[22m
+[2m10:58:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m10:58:43 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/layouts/MainLayout.jsx[22m
+[2m11:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:02:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:02:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:02:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/components/common/MobileBottomNav.jsx[22m
+[2m11:07:24 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:07:34 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/components/common/RouteLoader.jsx[22m
+[2m11:07:41 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:12:25 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:12:43 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:16:09 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:26:00 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/features/auth/context/AuthContext.jsx[22m
+[2m11:26:24 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:26:34 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:27:41 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:29:11 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:29:46 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:30:43 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/features/auth/context/AuthContext.jsx[22m
+[2m11:38:51 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:39:28 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:39:43 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:39:57 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:40:10 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:40:27 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:40:42 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:41:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:44:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:45:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:47:18 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:48:00 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:53:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:54:09 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:54:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:55:32 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:55:39 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:56:25 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:56:59 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:57:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:58:41 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m11:58:57 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:00:20 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:01:43 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:02:36 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:03:26 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:10:39 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:11:05 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:12:00 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:12:45 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:12:53 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:13:27 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:13:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:14:28 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:16:17 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:17:04 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m12:17:32 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:02:43 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:02:56 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:08:15 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:08:55 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:09:40 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:09:47 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:10:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:10:31 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m2:11:22 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:06:54 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:07:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:07:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/layouts/MainLayout.jsx[22m
+[2m3:07:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css, /src/components/common/MobileBottomNav.jsx[22m
+[2m3:07:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:07:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:07:57 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:08:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:08:36 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:10:54 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:10:54 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:10:54 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:41 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:41 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:41 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:12:41 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:13:30 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:21:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:21:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:22:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:22:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:22:49 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:23:14 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:23:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:32:39 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:32:39 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:33:03 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:34:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:42:36 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:42:36 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:43:56 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:49:44 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:50:27 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:51:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:54:33 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:55:18 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:56:13 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:56:57 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:57:13 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:57:20 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:57:36 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:58:18 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:58:45 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m3:58:45 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:05:24 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:07:13 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:08:03 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:08:10 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:09:48 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:10:32 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /node_modules/@heroui/react/dist/styles.css[22m
+[2m4:13:51 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m4:13:52 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m4:13:53 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[2m4:22:26 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m4:22:26 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m4:40:10 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m4:40:10 pm[22m [36m[1m[vite][22m[39m server restarted.

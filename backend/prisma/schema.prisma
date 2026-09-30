@@ -1,0 +1,433 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum lead_stage {
+  new
+  attempted
+  connected
+  follow_up
+  converted
+  dropped
+}
+
+enum call_direction {
+  inbound
+  outbound
+}
+
+enum call_disposition {
+  no_answer
+  busy
+  interested
+  not_interested
+  callback
+  converted
+}
+
+enum task_status {
+  pending
+  completed
+  cancelled
+  overdue
+}
+
+enum notification_channel {
+  push
+  email
+  sms
+  whatsapp
+  in_app
+}
+
+enum notification_status {
+  queued
+  sent
+  failed
+  read
+}
+
+enum analysis_status {
+  pending
+  processing
+  completed
+  failed
+}
+
+model Role {
+  id             String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code           String           @unique @db.VarChar(50)
+  name           String           @db.VarChar(100)
+  description    String?
+  isActive       Boolean          @default(true) @map("is_active")
+  createdAt      DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  users          User[]
+  rolePermission RolePermission[]
+
+  @@map("roles")
+}
+
+model Permission {
+  id             String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code           String           @unique @db.VarChar(100)
+  name           String           @db.VarChar(120)
+  description    String?
+  createdAt      DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  rolePermission RolePermission[]
+
+  @@map("permissions")
+}
+
+model RolePermission {
+  roleId         String           @map("role_id") @db.Uuid
+  permissionId   String           @map("permission_id") @db.Uuid
+  createdAt      DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  role           Role             @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission     Permission       @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+  @@map("role_permissions")
+}
+
+model Company {
+  id             String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code           String           @unique @db.VarChar(80)
+  name           String           @db.VarChar(150)
+  shopifyAbandonedCartApiUrl String? @map("shopify_abandoned_cart_api_url") @db.VarChar(500)
+  isActive       Boolean          @default(true) @map("is_active")
+  createdAt      DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  users          User[]
+  leads          Lead[]
+  calls          Call[]
+  phoneDevices   PhoneDevice[]
+  callRecordings CallRecording[]
+  followUps      FollowUp[]
+
+  @@map("companies")
+}
+
+model User {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  roleId                       String          @map("role_id") @db.Uuid
+  companyId                    String?         @map("company_id") @db.Uuid
+  fullName                     String          @map("full_name") @db.VarChar(150)
+  email                        String?         @unique @db.VarChar(190)
+  phone                        String?         @unique @db.VarChar(20)
+  passwordHash                 String          @map("password_hash")
+  isActive                     Boolean         @default(true) @map("is_active")
+  lastLoginAt                  DateTime?       @map("last_login_at") @db.Timestamptz(6)
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime        @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  role                         Role            @relation(fields: [roleId], references: [id])
+  company                      Company?        @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  leadsAssigned                Lead[]          @relation("LeadAssignedTo")
+  leadsCreated                 Lead[]          @relation("LeadCreatedBy")
+  leadActivities               LeadActivity[]  @relation("LeadActivityActor")
+  phoneDevicesAssigned         PhoneDevice[]   @relation("PhoneDeviceAssignedTo")
+  calls                        Call[]          @relation("CallAgent")
+  callRecordings               CallRecording[] @relation("CallRecordingAgent")
+  followUpsAssigned            FollowUp[]      @relation("FollowUpAssignedTo")
+  followUpsCreated             FollowUp[]      @relation("FollowUpCreatedBy")
+  notifications                Notification[]
+  auditLogs                    AuditLog[]      @relation("AuditActor")
+
+  @@index([companyId], map: "idx_users_company")
+  @@map("users")
+}
+
+model Lead {
+  id                           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyId                    String?          @map("company_id") @db.Uuid
+  assignedTo                   String?          @map("assigned_to") @db.Uuid
+  createdBy                    String?          @map("created_by") @db.Uuid
+
+  firstName                    String?          @map("first_name") @db.VarChar(100)
+  lastName                     String?          @map("last_name") @db.VarChar(100)
+  fullName                     String?          @map("full_name") @ignore
+
+  phonePrimary                 String           @map("phone_primary") @db.VarChar(20)
+  phoneAlternate               String?          @map("phone_alternate") @db.VarChar(20)
+  email                        String?          @db.VarChar(190)
+  source                       String?          @db.VarChar(80)
+  city                         String?          @db.VarChar(100)
+
+  stage                        lead_stage       @default(new)
+  priority                     Int              @default(3)
+  notes                        String?
+
+  lastCalledAt                 DateTime?        @map("last_called_at") @db.Timestamptz(6)
+  nextFollowUpAt               DateTime?        @map("next_follow_up_at") @db.Timestamptz(6)
+  convertedAt                  DateTime?        @map("converted_at") @db.Timestamptz(6)
+  droppedAt                    DateTime?        @map("dropped_at") @db.Timestamptz(6)
+
+  isActive                     Boolean          @default(true) @map("is_active")
+  createdAt                    DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  company                      Company?         @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  assignee                     User?            @relation("LeadAssignedTo", fields: [assignedTo], references: [id], onDelete: SetNull)
+  creator                      User?            @relation("LeadCreatedBy", fields: [createdBy], references: [id], onDelete: SetNull)
+  customFields                 LeadCustomField[]
+  activities                   LeadActivity[]
+  calls                        Call[]
+  recordings                   CallRecording[]
+  followUps                    FollowUp[]
+  notifications                Notification[]
+
+  @@index([companyId], map: "idx_leads_company")
+  @@index([assignedTo, stage], map: "idx_leads_assigned_stage")
+  @@index([nextFollowUpAt], map: "idx_leads_next_follow_up")
+  @@map("leads")
+}
+
+model LeadCustomField {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  leadId                       String          @map("lead_id") @db.Uuid
+  fieldKey                     String          @map("field_key") @db.VarChar(80)
+  fieldValue                   String?         @map("field_value")
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  lead                         Lead            @relation(fields: [leadId], references: [id], onDelete: Cascade)
+
+  @@unique([leadId, fieldKey])
+  @@map("lead_custom_fields")
+}
+
+model LeadActivity {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  leadId                       String          @map("lead_id") @db.Uuid
+  actorUserId                  String?         @map("actor_user_id") @db.Uuid
+  activityType                 String          @map("activity_type") @db.VarChar(60)
+  oldValue                     Json?           @map("old_value")
+  newValue                     Json?           @map("new_value")
+  note                         String?
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  lead                         Lead            @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  actor                        User?           @relation("LeadActivityActor", fields: [actorUserId], references: [id], onDelete: SetNull)
+
+  @@index([leadId, createdAt(sort: Desc)], map: "idx_lead_activities_lead_time")
+  @@map("lead_activities")
+}
+
+model Call {
+  id                           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyId                    String?          @map("company_id") @db.Uuid
+  leadId                       String           @map("lead_id") @db.Uuid
+  agentId                      String           @map("agent_id") @db.Uuid
+  phoneDeviceId                String?          @map("phone_device_id") @db.Uuid
+  direction                    call_direction   @default(outbound)
+  disposition                  call_disposition?
+
+  startedAt                    DateTime?        @map("started_at") @db.Timestamptz(6)
+  endedAt                      DateTime?        @map("ended_at") @db.Timestamptz(6)
+  durationSeconds              Int?             @map("duration_seconds")
+
+  notes                        String?
+  followUpRequired             Boolean          @default(false) @map("follow_up_required")
+  followUpAt                   DateTime?        @map("follow_up_at") @db.Timestamptz(6)
+
+  createdAt                    DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  company                      Company?         @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  lead                         Lead             @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  agent                        User             @relation("CallAgent", fields: [agentId], references: [id], onDelete: Restrict)
+  phoneDevice                  PhoneDevice?     @relation(fields: [phoneDeviceId], references: [id], onDelete: SetNull)
+  recording                    CallRecording?
+  followUps                    FollowUp[]
+
+  @@index([companyId], map: "idx_calls_company")
+  @@index([leadId, createdAt(sort: Desc)], map: "idx_calls_lead_time")
+  @@index([agentId, createdAt(sort: Desc)], map: "idx_calls_agent_time")
+  @@index([phoneDeviceId, createdAt(sort: Desc)], map: "idx_calls_phone_device_time")
+  @@index([disposition], map: "idx_calls_disposition")
+  @@map("calls")
+}
+
+model PhoneDevice {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyId                    String?         @map("company_id") @db.Uuid
+  assignedToUserId             String?         @map("assigned_to_user_id") @db.Uuid
+  label                        String          @db.VarChar(120)
+  imei                         String          @unique @db.VarChar(40)
+  phoneNumber                  String?         @map("phone_number") @db.VarChar(20)
+  manufacturer                 String?         @db.VarChar(80)
+  model                        String?         @db.VarChar(80)
+  simNumber                    String?         @map("sim_number") @db.VarChar(40)
+  notes                        String?
+  isActive                     Boolean         @default(true) @map("is_active")
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime        @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  company                      Company?        @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  assignee                     User?           @relation("PhoneDeviceAssignedTo", fields: [assignedToUserId], references: [id], onDelete: SetNull)
+  calls                        Call[]
+
+  @@index([companyId], map: "idx_phone_devices_company")
+  @@index([assignedToUserId], map: "idx_phone_devices_assignee")
+  @@map("phone_devices")
+}
+
+model CallRecording {
+  id                           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  callId                       String           @unique @map("call_id") @db.Uuid
+  companyId                    String?          @map("company_id") @db.Uuid
+  leadId                       String           @map("lead_id") @db.Uuid
+  agentId                      String           @map("agent_id") @db.Uuid
+
+  filePath                     String           @map("file_path")
+  fileName                     String?          @map("file_name") @db.VarChar(255)
+  mimeType                     String?          @map("mime_type") @db.VarChar(120)
+  fileSizeBytes                BigInt?          @map("file_size_bytes")
+
+  recordingStartAt             DateTime?        @map("recording_start_at") @db.Timestamptz(6)
+  recordingEndAt               DateTime?        @map("recording_end_at") @db.Timestamptz(6)
+  durationSeconds              Int?             @map("duration_seconds")
+
+  languageCode                 String?          @map("language_code") @db.VarChar(10)
+  channel                      String?          @default("mono") @db.VarChar(20)
+  format                       String?          @db.VarChar(20)
+
+  consentCaptured              Boolean          @default(false) @map("consent_captured")
+  isRestricted                 Boolean          @default(true) @map("is_restricted")
+
+  analysisStatus               analysis_status  @default(pending) @map("analysis_status")
+  uploadedAt                   DateTime         @default(now()) @map("uploaded_at") @db.Timestamptz(6)
+  createdAt                    DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  company                      Company?         @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  call                         Call             @relation(fields: [callId], references: [id], onDelete: Cascade)
+  lead                         Lead             @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  agent                        User             @relation("CallRecordingAgent", fields: [agentId], references: [id], onDelete: Restrict)
+  transcript                   CallTranscript?
+  insights                     AiCallInsight[]
+
+  @@index([companyId], map: "idx_recordings_company")
+  @@index([analysisStatus, createdAt], map: "idx_recordings_analysis_status")
+  @@index([leadId, createdAt(sort: Desc)], map: "idx_recordings_lead_time")
+  @@map("call_recordings")
+}
+
+model CallTranscript {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  recordingId                  String          @unique @map("recording_id") @db.Uuid
+  transcriptText               String?         @map("transcript_text")
+  transcriptJson               Json?           @map("transcript_json")
+  languageCode                 String?         @map("language_code") @db.VarChar(10)
+  confidence                   Decimal?        @db.Decimal(5, 2)
+  modelName                    String?         @map("model_name") @db.VarChar(120)
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime        @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  recording                    CallRecording   @relation(fields: [recordingId], references: [id], onDelete: Cascade)
+
+  @@map("call_transcripts")
+}
+
+model AiCallInsight {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  recordingId                  String          @map("recording_id") @db.Uuid
+  summary                      String?
+  sentimentLabel               String?         @map("sentiment_label") @db.VarChar(20)
+  sentimentScore               Decimal?        @map("sentiment_score") @db.Decimal(5, 2)
+  intentLabel                  String?         @map("intent_label") @db.VarChar(80)
+  complianceScore              Decimal?        @map("compliance_score") @db.Decimal(5, 2)
+  riskFlags                    Json?           @map("risk_flags")
+  actionItems                  Json?           @map("action_items")
+  modelName                    String?         @map("model_name") @db.VarChar(120)
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  recording                    CallRecording   @relation(fields: [recordingId], references: [id], onDelete: Cascade)
+
+  @@index([recordingId, createdAt(sort: Desc)], map: "idx_ai_insights_recording")
+  @@map("ai_call_insights")
+}
+
+model FollowUp {
+  id                           String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyId                    String?             @map("company_id") @db.Uuid
+  leadId                       String              @map("lead_id") @db.Uuid
+  assignedTo                   String              @map("assigned_to") @db.Uuid
+  callId                       String?             @map("call_id") @db.Uuid
+
+  dueAt                        DateTime            @map("due_at") @db.Timestamptz(6)
+  reminderAt                   DateTime?           @map("reminder_at") @db.Timestamptz(6)
+  reason                       String?             @db.VarChar(120)
+  status                       task_status         @default(pending)
+  priority                     Int                 @default(3)
+  note                         String?
+
+  completedAt                  DateTime?           @map("completed_at") @db.Timestamptz(6)
+  createdBy                    String?             @map("created_by") @db.Uuid
+  createdAt                    DateTime            @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt                    DateTime            @default(now()) @map("updated_at") @db.Timestamptz(6)
+
+  company                      Company?            @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  lead                         Lead                @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  assignee                     User                @relation("FollowUpAssignedTo", fields: [assignedTo], references: [id], onDelete: Restrict)
+  call                         Call?               @relation(fields: [callId], references: [id], onDelete: SetNull)
+  creator                      User?               @relation("FollowUpCreatedBy", fields: [createdBy], references: [id], onDelete: SetNull)
+  notifications                Notification[]
+
+  @@index([companyId], map: "idx_followups_company")
+  @@index([assignedTo, dueAt], map: "idx_followups_assignee_due")
+  @@index([status, dueAt], map: "idx_followups_status_due")
+  @@map("follow_ups")
+}
+
+model Notification {
+  id                           String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId                       String               @map("user_id") @db.Uuid
+  leadId                       String?              @map("lead_id") @db.Uuid
+  followUpId                   String?              @map("follow_up_id") @db.Uuid
+
+  channel                      notification_channel
+  status                       notification_status  @default(queued)
+  title                        String?              @db.VarChar(180)
+  message                      String?
+  payload                      Json?
+
+  scheduledAt                  DateTime?            @map("scheduled_at") @db.Timestamptz(6)
+  sentAt                       DateTime?            @map("sent_at") @db.Timestamptz(6)
+  readAt                       DateTime?            @map("read_at") @db.Timestamptz(6)
+  createdAt                    DateTime             @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  user                         User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lead                         Lead?                @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  followUp                     FollowUp?            @relation(fields: [followUpId], references: [id], onDelete: SetNull)
+
+  @@index([userId, status, createdAt(sort: Desc)], map: "idx_notifications_user_status")
+  @@map("notifications")
+}
+
+model AuditLog {
+  id                           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  actorUserId                  String?         @map("actor_user_id") @db.Uuid
+  entityName                   String          @map("entity_name") @db.VarChar(80)
+  entityId                     String?         @map("entity_id") @db.Uuid
+  action                       String          @db.VarChar(40)
+  oldData                      Json?           @map("old_data")
+  newData                      Json?           @map("new_data")
+  ipAddress                    String?         @map("ip_address") @db.Inet
+  userAgent                    String?         @map("user_agent")
+  createdAt                    DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  
+  actor                        User?           @relation("AuditActor", fields: [actorUserId], references: [id], onDelete: SetNull)
+
+  @@index([entityName, entityId, createdAt(sort: Desc)], map: "idx_audit_entity")
+  @@map("audit_logs")
+}

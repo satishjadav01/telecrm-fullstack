@@ -1,0 +1,131 @@
+export const dynamicPlanSteps = [
+  {
+    id: 1,
+    title: 'Core API Client and Environment',
+    goal: 'Set up one reusable API layer with auth token handling and error normalization.',
+    backend: ['GET /health', 'GET /api'],
+    frontend: [
+      'Create src/services/http/client.js (base URL from VITE_API_BASE_URL).',
+      'Create token helpers in src/services/auth/token.js.',
+      'Create request wrapper with Authorization header and JSON parse guard.',
+      'Create central API error mapper for toast/ui usage.',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Authentication and Session',
+    goal: 'Implement login, me, logout, and protected routing.',
+    backend: ['POST /api/auth/login', 'GET /api/auth/me'],
+    frontend: [
+      'Create src/features/auth/api/authApi.js.',
+      'Create Login page and form validation.',
+      'Create AuthContext with user + role + token state.',
+      'Create ProtectedRoute wrapper and redirect logic.',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Admin Setup: Users and Roles',
+    goal: 'Make admin setup page fully dynamic for user operations.',
+    backend: [
+      'GET /api/users',
+      'POST /api/users',
+      'GET /api/users/:id',
+      'PUT /api/users/:id',
+    ],
+    frontend: [
+      'Create src/features/users/api/usersApi.js.',
+      'Convert AdminSetupPage cards into actual user table + create/edit drawer.',
+      'Implement role-based action visibility (admin vs manager).',
+      'Add loading, empty state, and field-level server error render.',
+    ],
+  },
+  {
+    id: 4,
+    title: 'Leads CRUD and Filtering',
+    goal: 'Replace mock leads queue with backend-driven list and detail.',
+    backend: [
+      'GET /api/leads',
+      'POST /api/leads',
+      'GET /api/leads/:id',
+      'PUT /api/leads/:id',
+    ],
+    frontend: [
+      'Create src/features/leads/api/leadsApi.js.',
+      'Add lead filters (status/source/agent/date).',
+      'Add create/edit lead modal and detail side panel.',
+      'Add optimistic status update for quick pipeline movement.',
+    ],
+  },
+  {
+    id: 5,
+    title: 'Calling Workflow',
+    goal: 'Implement call start + disposition submission from lead context.',
+    backend: ['POST /api/calls/start', 'POST /api/calls/:id/disposition'],
+    frontend: [
+      'Create src/features/calls/api/callsApi.js.',
+      'Add call action toolbar in lead detail.',
+      'Add disposition modal with note and callback fields.',
+      'Refresh lead/follow-up states after disposition save.',
+    ],
+  },
+  {
+    id: 6,
+    title: 'Recording Upload and Playback',
+    goal: 'Support upload and playback in calls and lead timeline.',
+    backend: [
+      'POST /api/calls/:id/recording-upload',
+      'GET /api/calls/:id/recording',
+      'GET /api/leads/:id/recordings',
+    ],
+    frontend: [
+      'Create src/features/recordings/api/recordingsApi.js.',
+      'Add recording upload input with progress and retry.',
+      'Add lead recording list with audio player component.',
+      'Gate playback by role where needed.',
+    ],
+  },
+  {
+    id: 7,
+    title: 'Follow-up Engine',
+    goal: 'Connect due/overdue tabs and update flow to backend.',
+    backend: [
+      'GET /api/follow-ups/my',
+      'POST /api/follow-ups',
+      'PUT /api/follow-ups/:id',
+    ],
+    frontend: [
+      'Create src/features/followups/api/followupsApi.js.',
+      'Replace mock follow-ups table data with fetched data.',
+      'Add follow-up create/edit modal with datetime + reason + priority.',
+      'Implement due/overdue counters in header chips.',
+    ],
+  },
+  {
+    id: 8,
+    title: 'Reports and Dashboard Metrics',
+    goal: 'Load manager analytics cards/charts from API.',
+    backend: [
+      'GET /api/reports/agent-performance',
+      'GET /api/reports/conversion-funnel',
+    ],
+    frontend: [
+      'Create src/features/reports/api/reportsApi.js.',
+      'Replace static KPI cards with report responses.',
+      'Add date range and source filters.',
+      'Add graceful fallback when no data is returned.',
+    ],
+  },
+  {
+    id: 9,
+    title: 'Polish: ErrorBoundary, Guards, and Production Readiness',
+    goal: 'Harden UX and make module delivery safe.',
+    backend: ['All secured /api routes'],
+    frontend: [
+      'Add route errorElement UI and app-level ErrorBoundary.',
+      'Add request retry and unauthorized redirect handling.',
+      'Add mobile QA checklist for all routes.',
+      'Add smoke tests for auth, leads list, and follow-up save.',
+    ],
+  },
+]
